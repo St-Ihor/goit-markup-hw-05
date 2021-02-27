@@ -46,9 +46,22 @@
         <section class="hero">
             <div class="container">
                 <h1 class="name">Эффективные решения для вашего бизнеса</h1>
-                <a href="" class="order">Заказать услугу</a>
+                <button class="order" data-open-modal>Заказать услугу</button>
             </div>
         </section>
+
+        <!--Модальное окно "Заказать услугу"-->
+        <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal">
+                <button class="close-btn" data-close-modal>
+                    <svg class="modal-close" width="18" height="18">
+                        <use href="./image/symbol.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Скрипт JS -->
+        <script src="./js/modal.js"></script>
 
         <!--Ценности-->
         <section class="values">
